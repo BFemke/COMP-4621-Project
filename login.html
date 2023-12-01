@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-cookies.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>TimberTech Logging Co.</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login/Account</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <div ng-controller="CookieController">
+        <section >
+            <H2 ng_hide="loggedIn">Login</H2>
+            <form ng_hide="loggedIn" id="loginForm" ng-submit="login()">
+                <label for="username">Username:</label>
+                <input type="text" id="username" ng-model="username" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" ng-model="password" required>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+            <div ng-if="loginMessage">{{ loginMessage }}</div>
+        </section>
+        <section ng-show="loggedIn" >
+            <h2>User Information</h2>
+            <div>
+                <!-- Handles printing user information -->
+                <p><strong>Username:</strong> {{ username }}</p>
+                <p><strong>Password:</strong> {{ password }}</p>
+            </div>
+            <form id="logoutForm" ng-submit="logout()">
+                <button type="submit">Logout</button>
+            </form>
+        </section>
+    </div>
+
+</main>
+
+<script src="app.js"></script>
+<footer>
+    <p>&copy; 2023 TimberTech Logging Co.</p>
+</footer>
+</body>
+</html>

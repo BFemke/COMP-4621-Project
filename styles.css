@@ -1,0 +1,93 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0 0 10px;
+}
+
+/* Set the background color and text color for the entire page */
+body {
+    background-color: #FAFAFA;
+    color: #000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the page takes up at least the full viewport height. */
+}
+
+/* Style the header with a gold background and white text */
+header {
+    background-color: #d0a72f;
+    color: #FAFAFA;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+    background-color: #2F58D0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+ul.list {
+    margin-left: 20px;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FAFAFA;
+    font-weight: bold;
+}
+
+/* Style the main content sections */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #FAFAFA;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* image styles */
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    display: inline-block;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    background-color: #d0a72f;
+    color: #FAFAFA;
+    padding: 10px;
+}
+
+/* Add hover effect to navigation links */
+nav a:hover {
+    background-color: #2F58D0;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FAFAFA;
+}
+
+/* Form Styles */
+
+input, textarea {
+    margin: 15px;
+}
+
+.hidden {
+    display: none;
+}

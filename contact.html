@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>TimberTech Logging Co.</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login/Account</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Contact Information</h2>
+        <p>If you have any questions or need assistance, please feel free to contact us using the information below:</p>
+        <ul class="list">
+            <li>Email: contact@yourwebsite.com</li>
+            <li>Phone: (123) 456-7890</li>
+            <li>Address: 123 Main St, City, Country</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Form</h2>
+        <form action="contact.html" method="post">
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <br>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button id="submitBtn" type="button">Submit</button>
+        </form>
+    </section>
+    <div id="confirmation-message" class="hidden">
+        <p>Your contact request has been sent. We'll get back to you soon.</p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 TimberTech Logging Co.</p>
+</footer>
+
+<script src="contactScript.js"></script>
+</body>
+</html>
